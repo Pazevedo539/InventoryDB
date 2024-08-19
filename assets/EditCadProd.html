@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar e Editar Produto</title>
+    <link rel="stylesheet" href="https://localhost/meu_projeto/assets/CSS/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Editar Produto</h1>
+    </div>
+    <div class="form-container-information">
+        <form id="productForm">
+            <div id="productDetails">
+            </div>
+            <button class="confirm" type="button" onclick="updateProduct()">Atualizar</button>
+            <button type="button" onclick="window.location.href='https://localhost/meu_projeto/assets/PainelCadProd.html'">Voltar</button>
+        </form>
+        <div id="jsonOutput" style="display: none; white-space: pre-wrap; background: #f4f4f4; padding: 10px; margin-top: 20px; border: 1px solid #ddd;"></div>
+    </div>
+    <script src="https://localhost/meu_projeto/assets/JS/scripteditcadprod.js"></script>
+</body>
+</html>

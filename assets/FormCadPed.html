@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="stylesheet" href="https://localhost/meu_projeto/assets/CSS/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Pedido</h1>
+    </div>
+    <div class="form-container-information">
+        <form id="productForm">
+            <label for="idPedidoParceiro">ID do Pedido Parceiro:</label>
+            <input type="text" id="idPedidoParceiro" name="idPedidoParceiro" placeholder="Informe o ID do pedido parceiro">
+
+            <label for="valorFrete">Valor do Frete:</label>
+            <input type="number" id="valorFrete" required="" placeholder="Informe o valor do frete">
+
+            <label for="prazoEntrega">Prazo de Entrega (em dias):</label>
+            <input type="number" id="prazoEntrega" placeholder="Informe o prazo de entrega (em dias)">
+
+            <label for="valorTotalCompra">Valor Total da Compra:</label>
+            <input type="number" id="valorTotalCompra" readonly class="readonly" placeholder="Valor Total da Compra">
+
+            <label for="formaPagamento">Forma de Pagamento:</label>
+            <input type="text" id="formaPagamento" placeholder="Informe a forma de pagamento">
+
+            <h2>Dados Cliente</h2>
+
+            <label for="cpfCnpj">CPF/CNPJ:</label>
+            <input type="text" id="cpfCnpj" name="cpfCnpj" required="" placeholder="Informe o CPF/CNPJ">
+
+            <label for="nomeRazao">Nome/Razão Social:</label>
+            <input type="text" id="nomeRazao" name="nomeRazao" required="" placeholder="Informe o Nome/Razão Social">
+
+            <label for="fantasia">Fantasia:</label>
+            <input type="text" id="fantasia" name="fantasia" required="" placeholder="Informe o nome Fantasia">
+
+            <label for="sexo">Sexo:</label>
+            <select id="sexo">
+                <option value="">Selecionar</option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+            </select>
+
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="text" id="dataNascimento" placeholder="Informe a data de nascimento">
+
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" required="" placeholder="Informe o E-mail">
+
+            <h2>Dados de Entrega</h2>
+            
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required="" placeholder="Informe o CEP">
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required="" placeholder="Informe o endereço:">
+
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" required="" placeholder="Informe o número">
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required="" placeholder="Informe o bairro">
+
+            <label for="complemento">Complemento:</label>
+            <input type="text" id="complemento" name="complemento" placeholder="Informe o complemento">
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required="" placeholder="Informe a Cidade">
+
+            <label for="uf">Estado (UF):</label>
+            <input type="text" id="uf" name="uf" required="" placeholder="Informe o Estado (UF)">
+
+            <label for="responsavelRecebimento">Responsável pelo Recebimento:</label>
+            <input type="text" id="responsavelRecebimento" name="responsavelRecebimento" placeholder="Informe o responsável pelo recebimento">
+
+            <h2>Contatos</h2>
+
+            <label for="residencial">Telefone Residencial:</label>
+            <input type="text" id="residencial" name="residencial" required="" placeholder="Informe o telefone residencial">
+
+            <label for="comercial">Telefone Comercial:</label>
+            <input type="text" id="comercial" name="comercial" placeholder="Informe o telefone comercial">
+
+            <label for="celular">Telefone Celular:</label>
+            <input type="text" id="celular" name="celular" required="" placeholder="Informe o telefone celular">
+
+            <h2>Pagamento</h2>
+
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" name="valor" step="0.01" required="" placeholder="Informe o valor de pagemento">
+
+            <label for="quantidadeParcelas">Quantidade de Parcelas:</label>
+            <input type="number" id="quantidadeParcelas" name="quantidadeParcelas" required="" placeholder="Informe a quantidade de parcelas">
+
+            <label for="tipopagamento">Tipo de pagamento:</label>
+            <input type="text" id="tipopagamento" name="tipopagamento" required="" placeholder="Informe o tipo de pagamento">
+
+            <label for="idautorizacao">Autorização:</label>
+            <input type="text" id="idautorizacao" name="idautorizacao" placeholder="Informe o Id da autorização">
+
+            <label for="nsu">NSU:</label>
+            <input type="text" id="nsu" name="nsu" placeholder="Informe o NSU do pagamento">
+
+            <h2>SEFAS</h2>
+
+            <label for="idOperacao">Operação:</label>
+            <select id="idOperacao">
+                <option value="">Selecionar</option>
+                <option value="0">Sem intermediador</option>
+                <option value="1">Site ou plataforma de terceiros</option>
+            </select>
+
+            <label for="idFormaPagamento">Forma de Pagamento:</label>
+            <select id="idFormaPagamento">
+                <option value="">Selecionar</option>
+                <option value="0">Pagamento à Vista</option>
+                <option value="1">Pagamento a Prazo</option>
+            </select>
+
+            <label for="idMeioPagamento">Meio de Pagamento:</label>
+            <select id="idMeioPagamento">
+                <option value="">Selecionar</option>
+                <option value="01">Dinheiro</option>
+                <option value="02">Cheque</option>
+                <option value="03">Cartão de Crédito</option>
+                <option value="04">Cartão de Débito</option>
+                <option value="05">Crédito Loja</option>
+                <option value="10">Vale Alimentação</option>
+                <option value="11">Vale Refeição</option>
+                <option value="12">Vale Presente</option>
+                <option value="13">Vale Combustível</option>
+                <option value="15">Boleto Bancário</option>
+                <option value="16">Depósito Bancário</option>
+                <option value="17">Pagamento Instantâneo (PIX)</option>
+                <option value="18">Transferência bancária, Carteira Digital</option>
+                <option value="19">Programa de fidelidade, Cashback, Crédito Virtual</option>
+                <option value="20">Pontos Livelo</option>
+                <option value="90">Sem pagamento</option>
+                <option value="99">Outros</option>
+            </select>
+
+            <label for="cnpjInstituicaoPagamento">CNPJ da Instituição de Pagamento:</label>
+            <input type="text" id="cnpjInstituicaoPagamento" name="cnpjInstituicaoPagamento" placeholder="Informe o CNPJ da Instituição de Pagamento">
+
+            <label for="idBandeira">Bandeira do Cartão:</label>
+            <select id="idBandeira">
+                <option value="">Selecionar</option>
+                <option value="01">Visa</option>
+                <option value="02">Mastercard</option>
+                <option value="03">American Express</option>
+                <option value="04">Sorocred</option>
+                <option value="99">Outros</option>
+            </select>
+
+            <label for="cnpjIntermediadorTransacao">CNPJ do Intermediador da Transação:</label>
+            <input type="text" id="cnpjIntermediadorTransacao" name="cnpjIntermediadorTransacao" placeholder="Informe o CNPJ do Intermediador da Transação">
+
+            <label for="intermediadorIdentificador">Identificador do Intermediador:</label>
+            <input type="text" id="intermediadorIdentificador" name="intermediadorIdentificador" placeholder="Informe o Identificador do Intermediador">
+
+            <h2>Itens</h2>
+
+            <button type="button" id="searchItemBtn" onclick="window.location.href='https://localhost/meu_projeto/assets/PainelCadProdSel'">Pesquisar Item</button>
+
+            <label for="sku">SKU:</label>
+            <input type="number" id="sku" name="sku" placeholder="Informe o SKU do produto">
+
+            <label for="valorUnitario">Valor Unitário:</label>
+            <input type="number" id="valorUnitario" name="valorUnitario" placeholder="Informe o valor unitário do produto">
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" placeholder="Informe a quantidade do produto">
+
+            <button type="button" id="addItemsBtn">Adicionar Item</button>
+
+            <label for="itemsSummary">Descrição dos Itens:</label>
+            <textarea id="itemsSummary" readonly=""></textarea>
+
+            <button type="button" id="clearItemsBtn">Limpar</button>
+
+            <button class="confirm" type="submit">Gravar Pedido</button>
+            <button type="button" onclick="window.location.href='https://localhost/meu_projeto/assets/PainelCadPed.html'">Voltar</button>
+        </form>
+    </div>
+    <script src="https://localhost/meu_projeto/assets/JS/scriptcadped.js"></script>
+</body>
+</html>

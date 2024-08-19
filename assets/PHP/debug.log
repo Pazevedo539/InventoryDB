@@ -1,0 +1,199 @@
+Array
+(
+    [productId] => 6
+    [sku] => 1004
+    [description] => teste
+    [status] => enabled
+    [price] => 2800
+    [promotional_price] => 3000
+    [pricesite] => 
+    [cost] => 100.00
+    [shippingtime] => 0
+    [stores] => 1
+    [availablestock] => 15
+    [realstock] => 15
+    [attributes] => Array
+        (
+            [0] => Array
+                (
+                    [attribute_key] => 
+                )
+
+        )
+
+    [ref] => 1
+    [sku_variation] => 555
+    [ean] => 
+    [specifications] => Array
+        (
+            [0] => Array
+                (
+                    [specification_key] => 
+                )
+
+        )
+
+)
+Array
+(
+    [sku] => 1004
+    [description] => teste
+    [status] => enabled
+    [price] => 2800
+    [promotional_price] => 3000
+    [pricesite] => 
+    [cost] => 100.00
+    [shippingtime] => 0
+    [stores] => 1
+    [availablestock] => 15
+    [realstock] => 15
+    [attributes] => Array
+        (
+            [0] => Array
+                (
+                    [attribute_key] => 
+                )
+
+        )
+
+    [ref] => 1
+    [sku_variation] => 555
+    [ean] => 
+    [specifications] => Array
+        (
+            [0] => Array
+                (
+                    [specification_key] => 
+                )
+
+        )
+
+)
+Array
+(
+    [productId] => 6
+    [sku] => 1004
+    [description] => teste
+    [status] => disabled
+    [price] => 2800.00
+    [promotional_price] => 3000.00
+    [pricesite] => 
+    [cost] => 100.00
+    [shippingtime] => 0
+    [stores] => 1
+    [availablestock] => 15
+    [realstock] => 15
+    [attributes] => Array
+        (
+            [0] => Array
+                (
+                    [attribute_key] => 
+                )
+
+        )
+
+    [ref] => 1
+    [sku_variation] => 555
+    [ean] => 
+    [specifications] => Array
+        (
+            [0] => Array
+                (
+                    [specification_key] => 
+                )
+
+        )
+
+)
+Array
+(
+    [sku] => 1004
+    [description] => teste
+    [status] => disabled
+    [price] => 2800.00
+    [promotional_price] => 3000.00
+    [pricesite] => 
+    [cost] => 100.00
+    [shippingtime] => 0
+    [stores] => 1
+    [availablestock] => 15
+    [realstock] => 15
+    [attributes] => Array
+        (
+            [0] => Array
+                (
+                    [attribute_key] => 
+                )
+
+        )
+
+    [ref] => 1
+    [sku_variation] => 555
+    [ean] => 
+    [specifications] => Array
+        (
+            [0] => Array
+                (
+                    [specification_key] => 
+                )
+
+        )
+
+)
+Array
+(
+    [pedido] => Array
+        (
+            [numeropedido] => 124614
+            [idPedidoParceiro] => 1004
+        )
+
+)
+Array
+(
+    [pedido] => Array
+        (
+            [numeroPedido] => 124614
+            [idPedidoParceiro] => 1004
+            [mensagem] => Sucesso
+        )
+
+)
+Array
+(
+    [pedido] => Array
+        (
+            [numeropedido] => 124614
+            [idPedidoParceiro] => 1004
+        )
+
+)
+Array
+(
+    [pedido] => Array
+        (
+            [numeroPedido] => 124614
+            [idPedidoParceiro] => 1004
+            [mensagem] => Ja aprovado
+        )
+
+)
+Array
+(
+    [pedido] => Array
+        (
+            [numeropedido] => 124614
+            [idPedidoParceiro] => 1004
+        )
+
+)
+Array
+(
+    [pedido] => Array
+        (
+            [numeroPedido] => 124614
+            [idPedidoParceiro] => 1004
+            [mensagem] => Sucesso
+        )
+
+)
