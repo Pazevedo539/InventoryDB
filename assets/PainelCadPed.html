@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Pedidos</title>
+    <link rel="stylesheet" href="https://localhost/meu_projeto/assets/CSS/stylepainel.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Pedidos</h1>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="buttons">
+                <button onclick="window.location.href='https://localhost/meu_projeto/assets/FormCadPed.html'">Criar</button>
+                <button class="confirm" id="viewButton">Aprovar</button>
+                <button id="ButtonDelet">Deletar</button>
+                <button id="PainelButton" onclick="window.location.href='https://localhost/meu_projeto/assets/PainelCadProd.html'">Painel de Produtos</button>
+            </div>
+
+            <div class="search-container">
+                <select id="searchField">
+                    <option value="idPedidoParceiro">idPedidoParceiro</option>
+                    <option value="numeroPedido">Numero Pedido</option>
+                </select>
+                <input type="text" id="searchValue" placeholder="Digite para pesquisar">
+                <button onclick="searchData()">Pesquisar</button>
+            </div>
+        </div>
+        <div class="panel">
+            <table id="productTable">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th onclick="sortTable('id')">ID</th>
+                        <th onclick="sortTable('idPedidoParceiro')">idPedidoParceiro</th>
+                        <th onclick="sortTable('numeropedido')">Número Pedido</th>
+                        <th onclick="sortTable('valorFrete')">Valor Frete</th>
+                        <th onclick="sortTable('prazoEntrega')">Prazo de Entrega</th>
+                        <th onclick="sortTable('valorTotalCompra')">Valor Total Compra</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://localhost/meu_projeto/assets/JS/scriptpainelped.js"></script>
+</body>
+</html>

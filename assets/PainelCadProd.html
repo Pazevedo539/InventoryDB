@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Produto</title>
+    <link rel="stylesheet" href="https://localhost/meu_projeto/assets/CSS/stylepainel.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Produtos</h1>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="buttons">
+                <button onclick="window.location.href='https://localhost/meu_projeto/assets/FormCadProd.html'">Criar</button>
+                <button id="viewButton">Editar</button>
+                <button id="PainelButton" onclick="window.location.href='https://localhost/meu_projeto/assets/PainelCadPed.html'">Painel de Pedidos</button>
+            </div>
+            <div class="search-container">
+                <select id="searchField">
+                    <option value="sku">SKU</option>
+                    <option value="name">Nome</option>
+                    <option value="description">Descrição</option>
+                    <option value="status">Status</option>
+                </select>
+                <input type="text" id="searchValue" placeholder="Digite para pesquisar">
+                <button onclick="searchData()">Pesquisar</button>
+            </div>
+        </div>
+        <div class="panel">
+            <table id="productTable">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th onclick="sortTable('id')">ID</th>
+                        <th onclick="sortTable('sku')">SKU</th>
+                        <th onclick="sortTable('name')">Nome</th>
+                        <th onclick="sortTable('description')">Descrição</th>
+                        <th onclick="sortTable('status')">Status</th>
+                        <th onclick="sortTable('price')">Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://localhost/meu_projeto/assets/JS/scriptpainel.js"></script>
+</body>
+</html>
